@@ -1,0 +1,86 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Leia Organa",
+      "height": 159,
+      "mass": 72.2,
+      "isJedi": false,
+      "birthYear": 12,
+      "avatarUrl": "http://images?name=leia-organa.png",
+      "race": {
+        "id": 1,
+        "name": "human"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Han Solo",
+      "height": 173,
+      "mass": 93.2,
+      "isJedi": false,
+      "birthYear": 9,
+      "avatarUrl": "http://images?name=han-solo.png",
+      "race": {
+        "id": 1,
+        "name": "human"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Luke Skywalker",
+      "height": 169,
+      "mass": 69.54,
+      "isJedi": true,
+      "birthYear": 13,
+      "avatarUrl": "http://images?name=luke-skywalker.png",
+      "race": {
+        "id": 1,
+        "name": "human"
+      }
+    },
+    {
+      "id": 4,
+      "name": "R2-D2",
+      "height": 150,
+      "mass": 100.54,
+      "isJedi": false,
+      "birthYear": -45,
+      "avatarUrl": "http://images?name=r2-d2.png",
+      "race": {
+        "id": 2,
+        "name": "Droïdes"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chewbaca",
+      "height": 219,
+      "mass": 128.54,
+      "isJedi": false,
+      "birthYear": -3,
+      "avatarUrl": "http://images?name=chewbaca.png",
+      "race": {
+        "id": 3,
+        "name": "Ewok"
+      }
+    }
+  ],
+  "spaceships":[
+    {
+      "id": 1,
+      "name": "Millenium Falcon",
+      "mass": 1000000.00,
+      "photoUrl": "http://images?name=millenium-falcon.png",
+      "crewMax": 5,
+      "price": 1000.00
+    },{
+      "id": 2,
+      "name": "Slave 1",
+      "mass": 20000.00,
+      "photoUrl": "http://images?name=slave-one.png",
+      "crewMax": 2,
+      "price": 10000000.00
+    }
+  ]
+}
