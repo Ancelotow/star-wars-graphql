@@ -19,7 +19,7 @@ const characterType = new GraphQLObjectType({
         },
         planetBorn: {
             type: planetType,
-            resolve: (obj) => getJsonData().planets.filter((e: any) => { console.log(e); return e.id ==  obj.planetBornId})[0]
+            resolve: (obj) =>  getJsonData().planets.filter((e: any) => e.id ==  obj.planetBornId)[0]
         }
     },
 })

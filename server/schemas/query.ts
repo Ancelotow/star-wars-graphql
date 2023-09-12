@@ -30,15 +30,15 @@ export default new GraphQLObjectType({
         },
         humans: {
             type: new GraphQLList(characterType),
-            resolve: () => getJsonData().characters.filter((e: any) => e.race.id == 1)
+            resolve: () => getJsonData().characters.filter((e: any) => e.raceId == 1)
         },
         ewoks: {
             type: new GraphQLList(characterType),
-            resolve: () => getJsonData().characters.filter((e: any) => e.race.id == 3)
+            resolve: () => getJsonData().characters.filter((e: any) => e.raceId == 3)
         },
         droids: {
             type: new GraphQLList(characterType),
-            resolve: () => getJsonData().characters.filter((e: any) => e.race.id == 2)
+            resolve: () => getJsonData().characters.filter((e: any) => e.raceId == 2)
         },
         spaceships: {
             type: new GraphQLList(characterType),

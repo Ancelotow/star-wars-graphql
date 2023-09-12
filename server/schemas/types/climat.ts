@@ -8,6 +8,7 @@ const climatType = new GraphQLEnumType({
         TROPICAL: { value: 3 },
         URBAIN: { value: 4 },
         RAIN: { value: 5 },
+        SNOW: { value: 6 },
     },
 })
 

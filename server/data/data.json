@@ -65,6 +65,17 @@
       "avatarUrl": "http://images?name=boba-fett.png",
       "raceId": 1,
       "planetBornId": 7
+    },
+    {
+      "id": 7,
+      "name": "Anakin Skywalker",
+      "height": 178,
+      "mass": 77.2,
+      "isJedi": true,
+      "birthYear": -30,
+      "avatarUrl": "http://images?name=anakin-skywalker.png",
+      "raceId": 1,
+      "planetBornId": 1
     }
   ],
   "spaceships":[
@@ -122,53 +133,81 @@
       "id": 7,
       "name": "Kamino",
       "climatId": 5
+    },
+    {
+      "id": 8,
+      "name": "Naboo",
+      "climatId": 3
+    },
+    {
+      "id":9,
+      "name": "Hoth",
+      "climatId": 6
     }
   ],
   "movies": [
     {
       "id": 1,
       "name": "La menace fantôme",
-      "number": "I"
+      "number": "I",
+      "planetsIds": [1, 8],
+      "charactersIds": [7, 4]
     },
     {
       "id": 2,
       "name": "L'attaque des clones'",
-      "number": "II"
+      "number": "II",
+      "planetsIds": [1, 8, 7],
+      "charactersIds": [7, 4]
     },
     {
       "id": 3,
       "name": "La revanche des Siths",
-      "number": "III"
+      "number": "III",
+      "planetsIds": [8, 2],
+      "charactersIds": [7, 1, 3, 4, 5]
     },
     {
       "id": 4,
       "name": "Un nouvel espoir",
-      "number": "IV"
+      "number": "IV",
+      "planetsIds": [1, 5, 4],
+      "charactersIds": [1, 2, 3, 4, 5]
     },
     {
       "id": 5,
       "name": "L'empire contre attaque",
-      "number": "V"
+      "number": "V",
+      "planetsIds": [9, 4, 6],
+      "charactersIds": [1, 2, 3, 4, 5, 6]
     },
     {
       "id": 6,
       "name": "Le retour du Jedi",
-      "number": "VI"
+      "number": "VI",
+      "planetsIds": [3],
+      "charactersIds": [1, 2, 3, 4, 5, 6, 7]
     },
     {
       "id": 7,
       "name": "Le réveil de la Force",
-      "number": "VII"
+      "number": "VII",
+      "planetsIds": [1, 2],
+      "charactersIds": [1, 2, 3, 4, 5]
     },
     {
       "id": 8,
       "name": "Les derniers Jedi",
-      "number": "VIII"
+      "number": "VIII",
+      "planetsIds": [],
+      "charactersIds": [1, 3, 4, 5]
     },
     {
       "id": 9,
       "name": "L'ascension de Skywalker",
-      "number": "IX"
+      "number": "IX",
+      "planetsIds": [1, 2, 6],
+      "charactersIds": [1, 3, 4, 5]
     }
   ]
 }
