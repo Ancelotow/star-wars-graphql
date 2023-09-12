@@ -2,6 +2,8 @@ import {characterType} from "./types/human";
 import {GraphQLList, GraphQLObjectType} from "graphql";
 import {getJsonData} from "../data/datasource";
 import {raceType} from "./types/race";
+import {planetType} from "./types/planet";
+import {movieType} from "./types/movie";
 
 export default new GraphQLObjectType({
     name: 'Query',
@@ -41,6 +43,14 @@ export default new GraphQLObjectType({
         spaceships: {
             type: new GraphQLList(characterType),
             resolve: () => getJsonData().spaceships
+        },
+        planets: {
+            type: new GraphQLList(planetType),
+            resolve: () => getJsonData().planets
+        },
+        movies: {
+            type: new GraphQLList(movieType),
+            resolve: () => getJsonData().movies
         }
     }
 });

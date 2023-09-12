@@ -8,10 +8,8 @@
       "isJedi": false,
       "birthYear": 12,
       "avatarUrl": "http://images?name=leia-organa.png",
-      "race": {
-        "id": 1,
-        "name": "human"
-      }
+      "raceId": 1,
+      "planetBornId": 5
     },
     {
       "id": 2,
@@ -21,10 +19,8 @@
       "isJedi": false,
       "birthYear": 9,
       "avatarUrl": "http://images?name=han-solo.png",
-      "race": {
-        "id": 1,
-        "name": "human"
-      }
+      "raceId": 1,
+      "planetBornId": 1
     },
     {
       "id": 3,
@@ -34,10 +30,8 @@
       "isJedi": true,
       "birthYear": 13,
       "avatarUrl": "http://images?name=luke-skywalker.png",
-      "race": {
-        "id": 1,
-        "name": "human"
-      }
+      "raceId": 1,
+      "planetBornId": 1
     },
     {
       "id": 4,
@@ -47,10 +41,8 @@
       "isJedi": false,
       "birthYear": -45,
       "avatarUrl": "http://images?name=r2-d2.png",
-      "race": {
-        "id": 2,
-        "name": "Droïdes"
-      }
+      "raceId": 2,
+      "planetBornId": 1
     },
     {
       "id": 5,
@@ -60,10 +52,19 @@
       "isJedi": false,
       "birthYear": -3,
       "avatarUrl": "http://images?name=chewbaca.png",
-      "race": {
-        "id": 3,
-        "name": "Ewok"
-      }
+      "raceId": 3,
+      "planetBornId": 6
+    },
+    {
+      "id": 6,
+      "name": "Boba Fett",
+      "height": 171,
+      "mass": 78.54,
+      "isJedi": false,
+      "birthYear": -10,
+      "avatarUrl": "http://images?name=boba-fett.png",
+      "raceId": 1,
+      "planetBornId": 7
     }
   ],
   "spaceships":[
@@ -73,14 +74,101 @@
       "mass": 1000000.00,
       "photoUrl": "http://images?name=millenium-falcon.png",
       "crewMax": 5,
-      "price": 1000.00
-    },{
+      "price": 1000.00,
+      "captainId": 2
+    },
+    {
       "id": 2,
       "name": "Slave 1",
       "mass": 20000.00,
       "photoUrl": "http://images?name=slave-one.png",
       "crewMax": 2,
-      "price": 10000000.00
+      "price": 10000000.00,
+      "captainId": 6
+    }
+  ],
+  "planets": [
+    {
+      "id": 1,
+      "name": "Tatooïne",
+      "climatId": 1
+    },
+    {
+      "id": 2,
+      "name": "Mustafar",
+      "climatId": 2
+    },
+    {
+      "id": 3,
+      "name": "Jeda",
+      "climatId": 1
+    },
+    {
+      "id": 4,
+      "name": "Yavin IV",
+      "climatId": 3
+    },
+    {
+      "id": 5,
+      "name": "Alderand",
+      "climatId": 4
+    },
+    {
+      "id": 6,
+      "name": "Endor",
+      "climatId": 3
+    },
+    {
+      "id": 7,
+      "name": "Kamino",
+      "climatId": 5
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "La menace fantôme",
+      "number": "I"
+    },
+    {
+      "id": 2,
+      "name": "L'attaque des clones'",
+      "number": "II"
+    },
+    {
+      "id": 3,
+      "name": "La revanche des Siths",
+      "number": "III"
+    },
+    {
+      "id": 4,
+      "name": "Un nouvel espoir",
+      "number": "IV"
+    },
+    {
+      "id": 5,
+      "name": "L'empire contre attaque",
+      "number": "V"
+    },
+    {
+      "id": 6,
+      "name": "Le retour du Jedi",
+      "number": "VI"
+    },
+    {
+      "id": 7,
+      "name": "Le réveil de la Force",
+      "number": "VII"
+    },
+    {
+      "id": 8,
+      "name": "Les derniers Jedi",
+      "number": "VIII"
+    },
+    {
+      "id": 9,
+      "name": "L'ascension de Skywalker",
+      "number": "IX"
     }
   ]
 }

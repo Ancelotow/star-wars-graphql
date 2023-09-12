@@ -1,10 +1,11 @@
-import {GraphQLID, GraphQLObjectType, GraphQLString} from "graphql";
+import {GraphQLEnumType} from "graphql";
 
-const raceType = new GraphQLObjectType({
+const raceType = new GraphQLEnumType({
     name: 'Race',
-    fields: {
-        id: { type: GraphQLID },
-        name: { type: GraphQLString },
+    values: {
+        HUMAN: { value: 1 },
+        DROID: { value: 2 },
+        EWOK: { value: 3 },
     },
 })
 
