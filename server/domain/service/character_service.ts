@@ -39,6 +39,16 @@ class CharacterService {
         return result.filter((e: Character) => e.raceId == 2)
     }
 
+    async getAllRaces(): Promise<Array<number>> {
+        const result = await this._repository.get()
+        return result.map((e: Character) => e.raceId)
+    }
+
+    async getById(id: number): Promise<Character> {
+        const result = await this._repository.get()
+        return result.filter((e: Character) => e.id == id)[0]
+    }
+
 }
 
 export {CharacterService}

@@ -7,8 +7,12 @@ import {
 } from "graphql";
 import {characterType} from "./human";
 import {getJsonData} from "../../../data/datasource";
+import {CharacterService} from "../../../domain/service/character_service";
+import {Spaceship} from "../../../domain/entities/spaceship";
 
-const spaceshipType = new GraphQLObjectType({
+const characterService = new CharacterService()
+
+const spaceshipType = new GraphQLObjectType<Spaceship>({
     name: 'Spaceship',
     fields: {
         id: { type: GraphQLID },
@@ -19,7 +23,7 @@ const spaceshipType = new GraphQLObjectType({
         price:  { type: GraphQLFloat },
         captain: {
             type: characterType,
-            resolve: (obj) => getJsonData().characters.filter((e: any) => obj.captainId == e.id)[0]
+            resolve: (obj) => characterService.getById(obj.captainId)
         }
     },
 })
