@@ -1,9 +1,12 @@
-// @ts-ignore
-import express from 'express'
+import express = require('express');
 import { graphqlHTTP } from 'express-graphql'
-import schema from "./schemas/schema";
+import schema from "./presentation/schemas/schema";
+import {dbClient} from "./data/datasource/db/db_service";
 
 const app = express();
+
+dbClient.connect() // TODO: le déplacer ailleurs
+
 app.use(
     '/graphql',
     graphqlHTTP({

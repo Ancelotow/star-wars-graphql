@@ -1,9 +1,11 @@
 import {GraphQLBoolean, GraphQLFloat, GraphQLID, GraphQLInt, GraphQLObjectType, GraphQLString} from "graphql";
 import {raceType} from "./race";
 import {planetType} from "./planet";
-import {getJsonData} from "../../data/datasource";
+import {getJsonData} from "../../../data/datasource";
+import {spaceshipType} from "./spaceship";
+import {Character} from "../../../domain/entities/character";
 
-const characterType = new GraphQLObjectType({
+const characterType = new GraphQLObjectType<Character>({
     name: 'Character',
     fields: {
         id: { type: GraphQLID },
@@ -14,11 +16,11 @@ const characterType = new GraphQLObjectType({
         birthYear: { type: GraphQLInt },
         avatarUrl: { type: GraphQLString },
         race: {
-            type: raceType,
+            type: raceType!,
             resolve: (obj) => obj.raceId,
         },
         planetBorn: {
-            type: planetType,
+            type: planetType!,
             resolve: (obj) =>  getJsonData().planets.filter((e: any) => e.id ==  obj.planetBornId)[0]
         }
     },

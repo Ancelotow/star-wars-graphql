@@ -9,7 +9,8 @@
       "birthYear": 12,
       "avatarUrl": "http://images?name=leia-organa.png",
       "raceId": 1,
-      "planetBornId": 5
+      "planetBornId": 5,
+      "memberOf": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "birthYear": 9,
       "avatarUrl": "http://images?name=han-solo.png",
       "raceId": 1,
-      "planetBornId": 1
+      "planetBornId": 1,
+      "memberOf": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "birthYear": 13,
       "avatarUrl": "http://images?name=luke-skywalker.png",
       "raceId": 1,
-      "planetBornId": 1
+      "planetBornId": 1,
+      "memberOf": 1
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "birthYear": -45,
       "avatarUrl": "http://images?name=r2-d2.png",
       "raceId": 2,
-      "planetBornId": 1
+      "planetBornId": 1,
+      "memberOf": 1
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "birthYear": -3,
       "avatarUrl": "http://images?name=chewbaca.png",
       "raceId": 3,
-      "planetBornId": 6
+      "planetBornId": 6,
+      "memberOf": 1
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "birthYear": -10,
       "avatarUrl": "http://images?name=boba-fett.png",
       "raceId": 1,
-      "planetBornId": 7
+      "planetBornId": 7,
+      "memberOf": 2
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
       "birthYear": -30,
       "avatarUrl": "http://images?name=anakin-skywalker.png",
       "raceId": 1,
-      "planetBornId": 1
+      "planetBornId": 1,
+      "memberOf": null
     }
   ],
   "spaceships":[

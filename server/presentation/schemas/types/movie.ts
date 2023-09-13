@@ -9,7 +9,7 @@ import {
 } from "graphql";
 import {raceType} from "./race";
 import {planetType} from "./planet";
-import {getJsonData} from "../../data/datasource";
+import {getJsonData} from "../../../data/datasource";
 import {characterType} from "./human";
 
 const movieType = new GraphQLObjectType({
