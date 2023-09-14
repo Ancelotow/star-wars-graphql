@@ -1,16 +1,12 @@
 import {
-    GraphQLBoolean,
-    GraphQLFloat,
     GraphQLID,
-    GraphQLInt,
     GraphQLList,
     GraphQLObjectType,
     GraphQLString
 } from "graphql";
-import {raceType} from "./race";
 import {planetType} from "./planet";
-import {getJsonData} from "../../../data/datasource";
-import {characterType} from "./human";
+import {getJsonData} from "../../data/datasource";
+import {humanType} from "./human";
 
 const movieType = new GraphQLObjectType({
     name: 'Movie',
@@ -19,7 +15,7 @@ const movieType = new GraphQLObjectType({
         name: { type: GraphQLString },
         number: { type: GraphQLString },
         characters: {
-            type: new GraphQLList(characterType),
+            type: new GraphQLList(humanType),
             resolve: (obj) => getJsonData().characters.filter((e: any) => obj.charactersIds.includes(e.id))
         },
         planets: {

@@ -1,14 +1,13 @@
 import {GraphQLBoolean, GraphQLFloat, GraphQLID, GraphQLInt, GraphQLObjectType, GraphQLString} from "graphql";
 import {raceType} from "./race";
 import {planetType} from "./planet";
-import {getJsonData} from "../../../data/datasource";
-import {Character} from "../../../domain/entities/character";
-import {PlanetService} from "../../../domain/service/planet_service";
+import {Character} from "../../domain/entities/character";
+import {PlanetService} from "../../domain/service/planet_service";
 
 const planetService = new PlanetService()
 
-const characterType = new GraphQLObjectType<Character>({
-    name: 'Character',
+const humanType = new GraphQLObjectType<Character>({
+    name: 'Human',
     fields: {
         id: { type: GraphQLID },
         name: { type: GraphQLString },
@@ -28,4 +27,4 @@ const characterType = new GraphQLObjectType<Character>({
     },
 })
 
-export {characterType}
+export {humanType}

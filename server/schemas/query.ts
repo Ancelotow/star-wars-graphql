@@ -1,15 +1,13 @@
-import {characterType} from "./types/human";
 import {GraphQLList, GraphQLObjectType} from "graphql";
-import {getJsonData} from "../../data/datasource";
 import {raceType} from "./types/race";
 import {planetType} from "./types/planet";
 import {movieType} from "./types/movie";
 import {spaceshipType} from "./types/spaceship";
-import {CharacterService} from "../../domain/service/character_service";
-import {PlanetService} from "../../domain/service/planet_service";
-import {MovieService} from "../../domain/service/movie_service";
-import {SpaceshipService} from "../../domain/service/spaceship_service";
-
+import {CharacterService} from "../domain/service/character_service";
+import {PlanetService} from "../domain/service/planet_service";
+import {MovieService} from "../domain/service/movie_service";
+import {SpaceshipService} from "../domain/service/spaceship_service";
+import {characterType} from "./types/character";
 
 const characterService = new CharacterService()
 const planetService = new PlanetService()

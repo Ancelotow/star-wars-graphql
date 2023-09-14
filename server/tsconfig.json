@@ -5,6 +5,7 @@
     "strictPropertyInitialization": false,
     "sourceMap": true
   },
+  "files": ["src/@types/graphql.d.ts"],
   "exclude": [
     "node_modules"
   ]

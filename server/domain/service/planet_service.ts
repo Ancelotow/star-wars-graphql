@@ -14,6 +14,10 @@ class PlanetService {
         return results.filter((e: Planet) => e.id == id)[0]
     }
 
+    async add(planet: Planet): Promise<number> {
+        return this._repository.add(planet)
+    }
+
 }
 
 export {PlanetService}
